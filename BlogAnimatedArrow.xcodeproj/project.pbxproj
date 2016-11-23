@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C5919941DE56D9000EA1983 /* FullScreenPull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5919931DE56D9000EA1983 /* FullScreenPull.swift */; };
+		6C5919961DE599B300EA1983 /* UIViewPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5919951DE599B300EA1983 /* UIViewPosition.swift */; };
 		6C8B2F561DE29D5A0003C1BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B2F551DE29D5A0003C1BF /* AppDelegate.swift */; };
 		6C8B2F581DE29D5A0003C1BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B2F571DE29D5A0003C1BF /* ViewController.swift */; };
 		6C8B2F5B1DE29D5A0003C1BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B2F591DE29D5A0003C1BF /* Main.storyboard */; };
 		6C8B2F5D1DE29D5A0003C1BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B2F5C1DE29D5A0003C1BF /* Assets.xcassets */; };
 		6C8B2F601DE29D5A0003C1BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B2F5E1DE29D5A0003C1BF /* LaunchScreen.storyboard */; };
+		6C8B2F681DE29D930003C1BF /* AnimatedArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B2F671DE29D930003C1BF /* AnimatedArrow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C5919931DE56D9000EA1983 /* FullScreenPull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenPull.swift; sourceTree = "<group>"; };
+		6C5919951DE599B300EA1983 /* UIViewPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewPosition.swift; sourceTree = "<group>"; };
 		6C8B2F521DE29D5A0003C1BF /* BlogAnimatedArrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogAnimatedArrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8B2F551DE29D5A0003C1BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C8B2F571DE29D5A0003C1BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		6C8B2F5C1DE29D5A0003C1BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C8B2F5F1DE29D5A0003C1BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C8B2F611DE29D5A0003C1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C8B2F671DE29D930003C1BF /* AnimatedArrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedArrow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,13 @@
 			children = (
 				6C8B2F551DE29D5A0003C1BF /* AppDelegate.swift */,
 				6C8B2F571DE29D5A0003C1BF /* ViewController.swift */,
+				6C8B2F671DE29D930003C1BF /* AnimatedArrow.swift */,
 				6C8B2F591DE29D5A0003C1BF /* Main.storyboard */,
 				6C8B2F5C1DE29D5A0003C1BF /* Assets.xcassets */,
 				6C8B2F5E1DE29D5A0003C1BF /* LaunchScreen.storyboard */,
 				6C8B2F611DE29D5A0003C1BF /* Info.plist */,
+				6C5919931DE56D9000EA1983 /* FullScreenPull.swift */,
+				6C5919951DE599B300EA1983 /* UIViewPosition.swift */,
 			);
 			path = BlogAnimatedArrow;
 			sourceTree = "<group>";
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					6C8B2F511DE29D5A0003C1BF = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8B2F681DE29D930003C1BF /* AnimatedArrow.swift in Sources */,
 				6C8B2F581DE29D5A0003C1BF /* ViewController.swift in Sources */,
+				6C5919961DE599B300EA1983 /* UIViewPosition.swift in Sources */,
 				6C8B2F561DE29D5A0003C1BF /* AppDelegate.swift in Sources */,
+				6C5919941DE56D9000EA1983 /* FullScreenPull.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,10 +271,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BlogAnimatedArrow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.stephenw.BlogAnimatedArrow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -270,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BlogAnimatedArrow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.stephenw.BlogAnimatedArrow;
@@ -297,6 +313,7 @@
 				6C8B2F661DE29D5A0003C1BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
